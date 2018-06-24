@@ -17,7 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 mongoose.connect('mongodb://localhost/backend-boilerplate')
 mongoose.set('debug', true)
 
-require('./models/User');
+require('./models/User')
+require('./config/passport')
 
 if (!isProduction) {
   app.use((err, req, res) => {

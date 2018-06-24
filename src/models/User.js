@@ -40,4 +40,4 @@ UserSchema.methods.toAuthJSON = () => {
   }
 }
 
-mongoose.model('Users', UserSchema)
+mongoose.model('User', UserSchema)
